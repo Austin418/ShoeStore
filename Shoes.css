@@ -14,7 +14,7 @@ html{
 
 body{
 
-    width: 90%;
+    width: 98%;
     margin: 0 auto;
 }
 
@@ -125,6 +125,7 @@ aside{
     flex: 1;
     margin-left: 10px;
     background-color: white;
+    display: none;
 }
 footer{
     margin-top: 10px;
