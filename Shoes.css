@@ -7,6 +7,8 @@ html, body{
     background-size: cover;
 }
 
+/* red #b81616 */
+
 html{
     font-size: 10px;
     background-color: #a9a9a9;
@@ -20,16 +22,15 @@ body{
 
 /* typography */
 h1, h2, h3, h4, h5, h6{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Gruppo;
     color: #2a2a2a
 }
 
 p, input, li{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 color: #2a2a2a;
 }
 h1{
-    position: sticky;
     font-size: 4rem;
     text-align: center;
     color: white;
@@ -56,10 +57,21 @@ nav, article, aside, footer{
     padding: 1%;
 }
 nav{
+    border: 5px solid maroon;
+    padding: 5px solid maroon;
+    width: auto;
     height: 50px;
     background-color: crimson;
     display: flex;
     margin-bottom: 10px;
+    font-family: Gruppo;
+    font-weight: bold;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    width: auto;
 }
 
 nav ul{
@@ -75,15 +87,16 @@ nav li{
 }
 nav a{
     display: inline-block;
-    font-size: 2rem;
+    font-size: 3rem;
     text-transform: uppercase;
     text-decoration: none;
     color: black;
-    padding-right: 75px;
+    padding: 0px 25px 0px 25px;
 }
 nav a:hover{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: bold;
+    letter-spacing: 3.34px;
 }
 nav form{
     flex: 1;
@@ -122,7 +135,17 @@ main{
     display: flex;
 }
 article{
+    width: 98%;
+}
+article img{
+    max-width: 600px;
+    max-height: 400px;
+    height: auto;
+    width: auto;
+}
+article div{
     flex: 4;
+    
     padding: 5px;
     display: grid;
     grid-template-columns: repeat(5, auto);
@@ -181,38 +204,49 @@ item-9{
 item-10{
     grid-area: 10;
 }
-item-10{
+item-11{
     grid-area: 11;
 }
-item-10{
+item-12{
     grid-area: 12;
 }
-item-10{
+item-13{
     grid-area: 13;
 }
-item-10{
+item-14{
     grid-area: 14;
 }
-item-10{
+item-15{
     grid-area: 15;
 }
-item-10{
+item-16{
     grid-area: 16;
 }
-item-10{
+item-17{
     grid-area: 17;
 }
-item-10{
+item-18{
     grid-area: 18;
 }
-item-10{
+item-19{
     grid-area: 19;
 }
-item-10{
+item-20{
     grid-area: 20;
 }
 
 .img-responsive2{
     width: 10%;
     height: 10%;
+}
+
+.name, .price{
+    font-family: gruppo;
+    font-weight: bolder;
+    font-size: 4rem;
+    text-align: middle;
+}
+
+.price::before{
+    content: "$";
 }
