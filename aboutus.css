@@ -25,4 +25,112 @@ background-image:   background-image: url("data:image/svg+xml,%3Csvg xmlns='http
 background-attachment: fixed;
         background-size: cover;
     }
+
+
+    html{
+        font-size: 10px;
+        background-color: #a9a9a9;
+    }
     
+    body{
+    
+        width: 98%;
+        margin: 0 auto;
+    }
+    
+    /* typography */
+    h1, h2, h3, h4, h5, h6{
+        font-family: Gruppo;
+        color: #2a2a2a
+    }
+    
+    input, li{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        color: #2a2a2a;
+    }
+    li{
+        font-size: 1.5rem;
+        line-height: 1.5;
+    }
+
+/* header layout */
+nav, article, aside, footer{
+    background-color: white;
+    padding: 1%;
+}
+nav{
+    border: 5px solid maroon;
+    padding: 5px solid maroon;
+    width: auto;
+    height: 50px;
+    background-color: crimson;
+    display: flex;
+    margin-bottom: 10px;
+    font-family: Gruppo;
+    font-weight: bold;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    width: auto;
+}
+nav ul{
+    padding: 0;
+    list-style-type: none;
+    flex: 2;
+    display: flex;
+}
+nav li{
+    display: inline;
+    text-align: center;
+    flex: 1;
+}
+nav a{
+    display: inline-block;
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    padding: 0px 25px 0px 25px;
+}
+nav a:hover{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+    letter-spacing: 3.34px;
+}
+nav form{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 2rem;
+}
+input{
+    font-size: 1.6rem;
+    height: 32px;
+}
+
+input[type=search]{
+    flex: 3;
+    position: absolute;
+    right: 45px;
+    border: 2px solid maroon;
+    width: 300px;
+    height: 2.5em;
+}
+input[type=submit]{
+    flex: 1;
+    position: absolute;
+    right: 50px;
+    width: 5em;
+    margin-left: 1rem;
+    background: #333;
+    border: 0px;
+    color: white;
+}
+
+.img-responsive2{
+    width: 10%;
+    height: 10%;
+}
