@@ -2,10 +2,123 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hot Deals!</title>
-</head>
-<body>
+    <meta name="author" content="Austin Farwell" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content"">
+
+    <meta property="og:image" content="">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
     
+    <title>Gallery</title>
+    <link rel="stylesheet" href="Shoes.css">
+    <link rel="icon" href="media/Shoe website logo.png" type="image/x-icon"/>
+    <link rel="shortcut icon" href="media/Shoe website logo.png" type="image/x-icon"/>
+    <link href='https://fonts.googleapis.com/css?family=Gruppo' rel='stylesheet'>
+<body>]
+    <header>
+        <h1 style ="color: #b81616;">
+        Gallery
+        </h1>
+            <img class="img-responsive2" src="media/Shoe website logo.png">&trade;</a>
+    </header>
+    <nav class="sticky">
+        <h2 class="navbar-brand brand-name">
+            <a href="index.html"></a>
+        </h2>
+            <a href="hotdeals.html">Hot deals</a> <br>
+            <a href="Shoes.html">Gallery</a> <br>
+            <a href="checkout.html">Shoppingcart</a>
+            <a href="aboutus.html">About us</a>        </ul>
+        <form> 
+            <input type="search" action="search" name="query" placeholder="Search Site">
+            <input type="submit" name="submit" id="submit" value="Search">
+        </form>
+    </nav>
+    <main>
+        <article>
+            <h1>Have a look at some of the things we have to offer</h1>
+            <div class="item-1 item">
+                <img src="Shoes/Air-Jordan-1-Retro-Shattered-Backboard-Product.jpg" alt=""> <br> 
+                <p class="name">Air Jordan 1</p>
+                <p class="price">150</p>
+            </div>
+            <div class="item-2 item">
+                <img src="Shoes/Air-Jordan-2-Retro-Just-Don-Beach-GS.jpg" alt=""> <br> 
+                <p class="name">Air Jordan 2</p>
+                <p class="price">200</p>
+            </div>
+            
+            
+            
+            <div class="item-7 item">
+                <img src="Shoes/Air-Jordan-7-Retro-Hare-2015-Product.jpg" alt=""> <br> 
+                <p class="name">Air Jordan 7</p>
+                <p class="price">300</p>
+            </div>
+            <div class="item-8 item">
+                <img src="Shoes/Air-Jordan-8-Retro-OVO-White-Product.jpg" alt=""> <br> 
+                <p class="name">Air Jordan 8</p>
+                <p class="price">200</p>
+            </div>
+            <div class="item-9 item">
+                <img src="Shoes/img01 (4).jpg" alt=""> <br> 
+                <p class="name">Air Jordan 9</p>
+                <p class="price">190</p>
+            </div>
+            <div class="item-10 item">
+                <img src="Shoes/Air-Jordan-10-Retro-Steel-2013-Product.jpg" alt=""> <br> 
+                <p class="name">Air Jordan 10</p>
+                <p class="price">200</p>
+            </div>
+            
+            <div class="item-12 item">
+                <img src="shoes/Air-Jordan-12-Retro-Black-Red-Flu-Game-2016-Product.jpg" alt=""> <br> 
+                <p class="name">Air Jordan 12</p>
+                <p class="price">400</p>
+            </div>
+            
+            <div class="item-14 item">
+                <img src="Shoes/Air-Jordan-14-Retro-Ferrari-Product.jpg" alt=""> <br> 
+                <p class="name">Air Jordan 14</p>
+                <p class="price">200</p>
+            </div>
+            <div class="item-15 item">
+                <img src="Shoes/Air-Jordan-15-Retro-Kubo-Product.jpg" alt=""> <br> 
+                <p class="name">Air Jordan 15</p>
+                <p class="price">250</p>
+            </div>
+            <div class="item-16 item">
+                <img class="mySlides" src="Shoes/Nike-Air-Foamposite-One-Shattered-Backboard-Product.jpg">
+                <img class="mySlides" src="Shoes/Nike-Air-Foamposite-One-Nebula-Alternate-Galaxy-Product.jpg">
+                <img class="mySlides" src="Shoes/Air-Foamposite-Pro-Yeezy-Product.jpg">
+                <img class="mySlides" src="Shoes/Nike-Air-Foamposite-One-Cracked-Lava-GS.jpg"> <br>
+                <p class="name">Foamposite</p>
+                <p class="price">350</p>
+            </div>
+            <script>
+                var slideIndex = 0;
+                carousel();
+
+                function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > x.length) {slideIndex = 1}
+                x[slideIndex-1].style.display = "block";
+                setTimeout(carousel, 2000); // Change image every 2 seconds
+                }
+            </script>
+
+        </article>
+        
+    </main>
+    <footer>
+    <p><strong>Have a question or concern? <br> Contact us at A&JSHOES@Gmail.com</strong></p>
+        <p>(c) Copyright 2020</p>
+        <p>Images belong to stockx</p>
+    </footer>
 </body>
 </html>
