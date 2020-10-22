@@ -9,7 +9,22 @@
 <link rel="stylesheet" href="checkout.css">
 </head>
 <body>
-    
+    <header>
+        <img class="img-responsive2" src="media/Shoe website logo.png">&trade;</a>
+    </header>
+    <nav class="sticky">
+        <h2 class="navbar-brand brand-name">
+            <a href="index.html"></a>
+        </h2>
+            <a href="#">Hot deals</a> <br>
+            <a href="checkout.html">Shoppingcart</a>
+            <a href="#">Top sellers</a> <br>
+            <a href="aboutus.html">About us</a>        </ul>
+        <form> 
+            <input type="search" action="search" name="query" placeholder="Search Site">
+            <input type="submit" name="submit" id="submit" value="Search">
+        </form>
+    </nav>
 <form>
 <fieldset>
 
@@ -28,23 +43,23 @@
                         
                         
                         <div class="form-group">
-                            <label for="cc-number" class="control-label mb-1"></label>
-                            <input id="cc-number" name="cc-number" type="tel" class="form-control cc-number identified visa" required autocomplete="off"  >
-                            <span class="invalid-feedback">Enter a valid 12 to 16 digit card number</span>
+                            <label for="cc-number" class="control-label mb-1">Enter a valid 12 to 16 digit card number</label>
+                            <input id="cc-number" name="cc-number" type="tel" class="form-control cc-number identified visa" required autocomplete="off">
                         </div>
                         <div class="row">
                             <div class="col-6">
                                 <div class="form-group">
-                                    <label for="cc-exp" class="control-label mb-1"></label>
+                                    <label for="cc-exp" class="control-label mb-1">Enter the expiration date</label>
                                     <input id="cc-exp" name="cc-exp" type="tel" class="form-control cc-exp" required placeholder="MM / YY" autocomplete="cc-exp">
-                                    <span class="invalid-feedback">Enter the expiration date</span>
                                 </div>
                             </div>
                             <div class="col-6">
                                 <label for="x_card_code" class="control-label mb-1">CVV</label>
+                                <input type="text">
                                 <div class="input-group">
+                                    <label for="">Enter the 3-digit code on back</label>
                                     <input id="x_card_code" name="x_card_code" type="tel" class="form-control cc-cvc" required autocomplete="off">
-                                    <span class="invalid-feedback order-last">Enter the 3-digit code on back</span>
+                                    
                                     <div class="input-group-append">
                                         <div class="input-group-text">
                                         <span class="fa fa-question-circle fa-lg" data-toggle="popover" data-container="body" data-html="true" data-title="CVV" 
@@ -66,12 +81,49 @@
                             <span class="help-block" data-valmsg-for="x_promotion" data-valmsg-replace="true"></span>
                         </div>
                         
-                        <div>
-                            <button id="payment-button" type="submit" class="btn btn-lg btn-info btn-block">
-                                <i class="fa fa-lock fa-lg"></i>&nbsp;
-                                <span id="payment-button-amount">Pay </span>
-                                <span id="payment-button-sending" style="display:none;">Sending…</span>
-                            </button>
+                        <button id="myBtn">Purchase</button>
+
+                        <div id="myModal" class="modal">
+
+                            <!-- Modal content -->
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <p>Thank You for Shopping at A&J, <br> Your order will arive shortly. In the Mean time checkout our other products in the Gallery.</p>
+                                <button>
+                                    <a href="Shoes.html">
+                                        Gallery
+                                    </a>
+                                </button>
+                            </div>
+                        
+                        </div>
+                            <script>
+                                // Get the modal
+                                var modal = document.getElementById("myModal");
+                                
+                                // Get the button that opens the modal
+                                var btn = document.getElementById("myBtn");
+                                
+                                // Get the <span> element that closes the modal
+                                var span = document.getElementsByClassName("close")[0];
+                                
+                                // When the user clicks the button, open the modal 
+                                btn.onclick = function() {
+                                    modal.style.display = "block";
+                                }
+                                
+                                // When the user clicks on <span> (x), close the modal
+                                span.onclick = function() {
+                                    modal.style.display = "none";
+                                }
+                                
+                                // When the user clicks anywhere outside of the modal, close it
+                                window.onclick = function(event) {
+                                    if (event.target == modal) {
+                                    modal.style.display = "none";
+                                    }
+                                }
+                            </script>
                         </div>
                     </form>
                 </div>
