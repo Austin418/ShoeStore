@@ -26,8 +26,8 @@
             <a href="index.html"></a>
         </h2>
             <a href="#">Hot deals</a> <br>
+            <a href="Shoes.html">Gallery</a> <br>
             <a href="checkout.html">Shoppingcart</a>
-            <a href="#">Top sellers</a> <br>
             <a href="aboutus.html">About us</a>        </ul>
         <form> 
             <input type="search" action="search" name="query" placeholder="Search Site">
@@ -93,32 +93,51 @@
                 <p class="price">450</p>
             </div>
             <div class="item-12 item">
-                <img src="" alt=""> <br> 
+                <img src="shoes/Air-Jordan-12-Retro-Black-Red-Flu-Game-2016-Product.jpg" alt=""> <br> 
                 <p class="name">Air Jordan 12</p>
                 <p class="price">400</p>
             </div>
             <div class="item-13 item">
-                <img src="" alt=""> <br> 
+                <img src="Shoes/Air-Jordan-13-Retro-Lakers-Product.jpg" alt=""> <br> 
                 <p class="name">Air Jordan 13</p>
                 <p class="price">350</p>
             </div>
             <div class="item-14 item">
-                <img src="" alt=""> <br> 
+                <img src="Shoes/Air-Jordan-14-Retro-Ferrari-Product.jpg" alt=""> <br> 
                 <p class="name">Air Jordan 14</p>
                 <p class="price">200</p>
             </div>
             <div class="item-15 item">
-                <img src="" alt=""> <br> 
+                <img src="Shoes/Air-Jordan-15-Retro-Kubo-Product.jpg" alt=""> <br> 
                 <p class="name">Air Jordan 15</p>
                 <p class="price">250</p>
             </div>
             <div class="item-16 item">
-                <img src="" alt=""> <br>
+                <img class="mySlides" src="Shoes/Nike-Air-Foamposite-One-Shattered-Backboard-Product.jpg">
+                <img class="mySlides" src="Shoes/Nike-Air-Foamposite-One-Nebula-Alternate-Galaxy-Product.jpg">
+                <img class="mySlides" src="Shoes/Air-Foamposite-Pro-Yeezy-Product.jpg">
+                <img class="mySlides" src="Shoes/Nike-Air-Foamposite-One-Cracked-Lava-GS.jpg"> <br>
                 <p class="name">Foamposite</p>
                 <p class="price">350</p>
             </div>
+            <script>
+                var slideIndex = 0;
+                carousel();
+
+                function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > x.length) {slideIndex = 1}
+                x[slideIndex-1].style.display = "block";
+                setTimeout(carousel, 2000); // Change image every 2 seconds
+                }
+            </script>
             <div class="item-17 item">
-                <img src="" alt=""> <br> 
+                <img src="Shoes/Reebok-Pump-Omni-Lite-Dee-Brown-Black-2017-Product.jpg" alt=""> <br> 
                 <p class="name">Reebok Pumps</p>
                 <p class="price">450</p>
             </div>

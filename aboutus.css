@@ -25,7 +25,32 @@ html, body{
         background-size: cover;
     }
 
-}
+
+    html{
+        font-size: 10px;
+        background-color: #a9a9a9;
+    }
+    
+    body{
+    
+        width: 98%;
+        margin: 0 auto;
+    }
+    
+    /* typography */
+    h1, h2, h3, h4, h5, h6{
+        font-family: Gruppo;
+        color: #2a2a2a
+    }
+    
+    input, li{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        color: #2a2a2a;
+    }
+    li{
+        font-size: 1.5rem;
+        line-height: 1.5;
+    }
 
 /* header layout */
 nav, article, aside, footer{
