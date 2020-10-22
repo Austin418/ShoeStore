@@ -1,13 +1,251 @@
 html, body{
-font-family: gruppo;
-}
-h1{
-font-size: 4rem;
-text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #2e0000;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 400'%3E%3Cdefs%3E%3CradialGradient id='a' cx='396' cy='281' r='514' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23dd0000'/%3E%3Cstop offset='1' stop-color='%232e0000'/%3E%3C/radialGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='400' y1='148' x2='400' y2='333'%3E%3Cstop offset='0' stop-color='%23ff7ca6' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23ff7ca6' stop-opacity='0.5'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='800' height='400'/%3E%3Cg fill-opacity='0.4'%3E%3Ccircle fill='url(%23b)' cx='267.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='532.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='400' cy='30' r='300'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
 }
 
-p{text-align: center;
-font-size: 2rem;}
+
+
+/* red #b81616 */
+
+html{
+    font-size: 10px;
+    background-color: white;
+}
+
 body{
+
+    width: 98%;
+    margin: 0 auto;
+}
+
+/* typography */
+h1{
+    font-family: Gruppo;
+    color: #2a2a2a
+}
+
+ input, li{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+color: #2a2a2a;
+}
+h1{
+    font-size: 4rem;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 10px black;
+}
+h2{
+    font-size: 3rem;
     text-align: center;
 }
+h3{
+    font-size: 2.2rem;
+}
+h4{
+    font-size: 1.8rem;
+}
+ li{
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+p{ 
+    text-align: center;
+    font-size: large;
+    color: white;
+    font-family: gruppo;
+    font-weight: bolder;
+}
+
+/* header layout */
+nav, article, aside, footer{
+    background-color: white;
+    padding: 1%;
+}
+nav{
+    border: 5px solid maroon;
+    padding: 5px solid maroon;
+    width: auto;
+    height: 50px;
+    background-color: crimson;
+    display: flex;
+    margin-bottom: 10px;
+    font-family: Gruppo;
+    font-weight: bold;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    width: auto;
+}
+
+nav ul{
+    padding: 0;
+    list-style-type: none;
+    flex: 2;
+    display: flex;
+}
+nav li{
+    display: inline;
+    text-align: center;
+    flex: 1;
+}
+nav a{
+    display: inline-block;
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    padding: 0px 25px 0px 25px;
+}
+nav a:hover{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+    letter-spacing: 3.34px;
+}
+nav form{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 2rem;
+}
+input{
+    font-size: 1.6rem;
+    height: 32px;
+}
+
+input[type=search]{
+    flex: 3;
+    position: absolute;
+    right: 45px;
+    border: 2px solid maroon;
+    width: 300px;
+    height: 2.5em;
+}
+input[type=submit]{
+    flex: 1;
+    position: absolute;
+    right: 50px;
+    width: 5em;
+    margin-left: 1rem;
+    background: #333;
+    border: 0px;
+    color: white;
+}
+
+/* main layout */
+
+main{
+    display: flex;
+}
+article{
+    width: 98%;
+}
+article img{
+    max-width: 600px;
+    max-height: 400px;
+    height: auto;
+    width: auto;
+}
+article div{
+    flex: 4;
+    
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "1 2 3 4 5"
+    "6 7 8 9 10"
+    "11 12 13 14 15"
+    "16 17 18 19 20"
+    ;
+}
+aside{
+    flex: 1;
+    margin-left: 10px;
+    background-color: white;
+    display: none;
+}
+footer{
+    margin-top: 10px;
+}
+
+header, nav{
+    left: 50px;
+}
+
+item-1{
+    grid-area: 1;
+}
+item-2{
+    grid-area: 1;
+}
+item-3{
+    grid-area: 2;
+}
+item-4{
+    grid-area: 3;
+}
+item-5{
+    grid-area: 4;
+}
+item-6{
+    grid-area: 5;
+}
+item-1{
+    grid-area: 6;
+}
+item-7{
+    grid-area: 7;
+}
+item-8{
+    grid-area: 8;
+}
+item-9{
+    grid-area: 9;
+}
+item-10{
+    grid-area: 10;
+}
+item-11{
+    grid-area: 11;
+}
+item-12{
+    grid-area: 12;
+}
+item-13{
+    grid-area: 13;
+}
+item-14{
+    grid-area: 14;
+}
+item-15{
+    grid-area: 15;
+}
+item-16{
+    grid-area: 16;
+}
+item-17{
+    grid-area: 17;
+}
+item-18{
+    grid-area: 18;
+}
+item-19{
+    grid-area: 19;
+}
+item-20{
+    grid-area: 20;
+}
+
+.img-responsive2{
+    width: 10%;
+    height: 10%;
+}
+
