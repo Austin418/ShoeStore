@@ -24,6 +24,29 @@ html, body{
     background-attachment: fixed;
     background-size: cover;
 }
+
+/* header layout */
+nav, article, aside, footer{
+    background-color: white;
+    padding: 1%;
+}
+nav{
+    border: 5px solid maroon;
+    padding: 5px solid maroon;
+    width: auto;
+    height: 50px;
+    background-color: crimson;
+    display: flex;
+    margin-bottom: 10px;
+    font-family: Gruppo;
+    font-weight: bold;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    width: auto;
+}
 nav ul{
     padding: 0;
     list-style-type: none;
