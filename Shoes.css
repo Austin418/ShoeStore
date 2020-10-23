@@ -252,3 +252,11 @@ item-20{
 .price::before{
     content: "$";
 }
+
+.Headerart{
+    max-height: 200px;
+    min-height: 199px;
+    text-align: center;
+}
+
+@media

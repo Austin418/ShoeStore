@@ -25,7 +25,9 @@ body{
 /* typography */
 h1{
     font-family: Gruppo;
-    color: #2a2a2a
+    font-size: 4rem;
+    text-align: center;
+    text-shadow: 2px 2px 10px black;
 }
 
  input, li{
