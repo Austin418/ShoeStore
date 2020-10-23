@@ -145,7 +145,7 @@ input[type=submit]{
     input, button, nav a{
         width: 75%;
         height: 75%;
-        font-size: 120%
+        font-size: 50%
     }
     input[type=search]{
 
@@ -153,7 +153,6 @@ input[type=submit]{
         height: 40%;
     }
     input[type=submit]{
-
         width: 10%;
         height: 25%;
     }
@@ -172,9 +171,13 @@ input[type=submit]{
     nav a{
         letter-spacing: 0.2px;
         padding: 0px 10px 0px 10px;
+
     }
 
     .card-body{
         font-size: 10px;
+    }
+    form{
+        background-color: crimson;
     }
 }
