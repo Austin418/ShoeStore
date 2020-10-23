@@ -32,19 +32,23 @@
 <form>
 <fieldset>
 
-<legend>Checkout</legend>
-
 <div class="container-fluid py-3">
     <div class="row">
         <div class="col-12 col-sm-8 col-md-6 col-lg-4 mx-auto">
             <div id="pay-invoice" class="card">
                 <div class="card-body">
                     <div class="card-title">
+                        
                         <h3 class="text-center">Please input your card info</h3>
                     </div>
                     <hr>
                     <form action="/echo" method="post" novalidate="novalidate" class="needs-validation">
-                        
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Master</label><br>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Visa</label><br>
+                        <input type="radio" id="other" name="gender" value="other">
+                        <label for="other">Gift card</label>
                         
                         <div class="form-group">
                             <label for="cc-number" class="control-label mb-1">Enter a valid 12 to 16 digit card number</label>
@@ -84,7 +88,31 @@
                             <input id="x_promotion" name="x_prom" type="text" class="form-control" value="" data-val="true" data-val-required="Please enter the Promotion  code" >
                             <span class="help-block" data-valmsg-for="x_promotion" data-valmsg-replace="true"></span>
                         </div>
-                        
+                        <br>
+                        <h1>Special Requests:</h1>
+                        <textarea name="" id="" cols="100" rows="10"></textarea>
+                        <br>
+                        <h1>Additional items you may want to purchase</h1>
+                        <label class="container">Shoe shine
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                        </label>
+                        <br>
+                        <label class="container">Shoe repair kit
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <br>
+                        <label class="container">Shoe tree
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <br>
+                        <label class="container">Warranty
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <br>
                         <button id="myBtn">Purchase</button>
 
                         <div id="myModal" class="modal">
@@ -135,6 +163,7 @@
         </div>
     </div>
 </div>
+
 </form>
 </fieldset>
 <a href="shoes.html"></a>
