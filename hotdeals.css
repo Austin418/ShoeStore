@@ -252,3 +252,41 @@ item-20{
 .price::before{
     content: "$";
 }
+
+@media (max-width: 1300px){
+    input, button, nav a{
+        width: 75%;
+        height: 75%;
+        font-size: 120%
+    }
+    input[type=search]{
+        padding-top: 10px;
+        width: 40%;
+        height: 40%;
+    }
+    input[type=submit]{
+        padding-top: 10px;
+        width: 10%;
+        height: 25%;
+    }
+    .Headerart{
+        display: none;
+    }
+
+    .item img{
+        width: 75%;
+    }
+
+    .name{
+        display: none;
+    }
+
+    .price{
+        float: left;
+    }
+
+    nav a{
+        letter-spacing: 0.2px;
+        padding: 0px 10px 0px 10px;
+    }
+}
