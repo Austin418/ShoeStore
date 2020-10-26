@@ -287,4 +287,12 @@ item-20{
         letter-spacing: 0.2px;
         padding: 0px 10px 0px 10px;
     }
+
+    nav{
+        font-size: 120%;
+    }
+    nav form{
+        padding-top: 10px;
+    }
+    
 }
