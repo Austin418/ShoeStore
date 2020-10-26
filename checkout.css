@@ -94,7 +94,7 @@ nav form{
     height: 100%;
     padding: 0 2rem;
 }
-input{
+nav input{
     font-size: 1.6rem;
     height: 32px;
 }
@@ -197,18 +197,21 @@ div h3{
 }
 
 @media (max-width: 1300px){
+    html{
+        font-size: 10px;
+    }
     input, button, nav a{
         width: 75%;
         height: 75%;
         font-size: 120%
     }
     input[type=search]{
-        padding-top: 10px;
+    
         width: 40%;
         height: 40%;
     }
     input[type=submit]{
-        padding-top: 10px;
+    
         width: 10%;
         height: 25%;
     }
@@ -238,4 +241,28 @@ div h3{
     nav form{
         padding-top: 10px;
     }
+
+    .container{
+        font-size: 50%;
+    }
+    input[type=radio],input[type="checkbox"]{
+        height: auto;
+        text-align: right;
+        align-items: left
+        ;
+    }
+    label{
+        text-align: left;
+    }
+    button:hover{
+        height: auto;
+        width: auto;
+
+    }
+    button{
+        height: auto;
+        width: auto;
+        font-size: 45px;
+    }
+
 }
